@@ -1,0 +1,62 @@
+# Registry of every place content is pulled from.
+# `id` becomes the folder name under raw/ and assets/, and is cited in content frontmatter.
+# `priority` is a hint only (higher = newer/more authoritative); conflicts are always
+# resolved by asking the user (see CLAUDE.md > Conflicts).
+# `last_pulled` is updated by the ingest commands.
+
+sources:
+  - id: obsidian-dnd-v2
+    type: obsidian
+    path: ~/Documents/Obsidian/D&D v2
+    priority: 2
+    licence: own-work
+    skip: ["z. Templates/**", "Worldbuilding Bible Template/**"]
+    notes: "Largest vault. 'z. Old Stuff' and 'z. Other Games' are ingested but likely low-value."
+    last_pulled: "2026-11-04T10:54:34+00:00"
+
+  - id: obsidian-dnd-v3
+    type: obsidian
+    path: ~/Documents/Obsidian/D&D v3
+    priority: 3
+    licence: own-work
+    skip: ["z. Templates/**"]
+    last_pulled: "2026-11-04T10:54:34+00:00"
+
+  - id: obsidian-dnd-v4
+    type: obsidian
+    path: ~/Documents/Obsidian/DnD v4
+    priority: 4
+    licence: own-work
+    skip: ["99 - Assets/Templates/**"]
+    last_pulled: "2026-11-04T10:54:34+00:00"
+
+  - id: obsidian-dnd-v5
+    type: obsidian
+    path: ~/Documents/Obsidian/D&D V5
+    priority: 5
+    licence: own-work
+    skip: ["91 - Templates/**", "97 - Scripts/**"]
+    notes: "Newest vault; mostly scaffolding as of 2026-11-04."
+    last_pulled: "2026-11-04T10:54:34+00:00"
+
+  # Examples - copy and fill in:
+  # - id: miraheze-mywiki
+  #   type: mediawiki
+  #   api: https://mywiki.miraheze.org/w/api.php
+  #   pages: all            # or a list of page titles, or {category: "Gods"}
+  #   namespaces: [0]
+  #   priority: 3
+  #   licence: CC BY-SA 4.0  # auto-filled from the wiki's siteinfo if left blank
+  #   last_pulled: null
+  #
+  # - id: web-example
+  #   type: web
+  #   urls: [https://example.com/some-page]
+  #   licence: "check before use"
+  #   last_pulled: null
+  #
+  # - id: gdoc-session-notes
+  #   type: gdoc
+  #   urls: [https://docs.google.com/document/d/<DOC_ID>/edit]   # must be link-shared
+  #   licence: own-work
+  #   last_pulled: null

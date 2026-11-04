@@ -1,0 +1,46 @@
+---
+_source: obsidian-dnd-v2
+_source_path: Campaigns/Starting Sep 2024/Valakos Steelgrin (Jessie).md
+_title: Valakos Steelgrin (Jessie)
+_licence: own-work
+_fetched: '2026-11-04T10:54:34+00:00'
+_content_hash: sha256:1ecf2479e60222a2812bd38ea4b5e2dfc7bb89ed297118ba398551fa7a0f1015
+---
+
+## Stats
+
+## Items
+
+## Hooks
+- Venge, a deep red powder of mineral origin, generally the darker the powder, the stronger and more refined the effects are. Cheap Venge can lead to bleeding gums and bloodshot teeth.
+- Sharpsugar: Expensive, indulged in
+by many performers to give them the
+boost of energy. Removes one level
+of exhaustion, gives advantage on
+perception checks, and adds 5 to your
+movement speed. User becomes jittery.
+Either snorted or smoked from a pipe.
+Made out of a rare plant that grows only
+on the Southern Coasts. The gangs that
+import it are incredibly dangerous.
+- Brighteye Paste: actual paste
+## Backstory
+Left as a newborn at the foot of the bigtop by an ex-acrobat mother, Valakos was named and raised in the circus, by those that his mother had once known. Beloved and cared for by the whole company, Val was a happy child, who formed his closest bond with the circus' ringmaster, an enigmatic bard, Heliar Rudz, known on stage simply as The Ringmaster. Heliar served as Valakos' primary father figure, and, knowing the performers that his circus lacked, set Valakos on course to become the strongman from an early age. Trained with weights since he was small, once Valakos was old and strong enough, at about fourteen, he took to the stage. Not a natural performer, Heliar instructed Valakos to just smile, preen a little, and lift, correctly telling him that the audience would come to his act for enormous feats of strength, not for his charisma. His smiles and metal weights finally earned him a surname: Steelgrin. 
+
+Though adored by the company, Valakos was known to be impulsive and easily distracted, and often did not think through his actions. He would leave weights far too heavy for others to lift laying around the circus, causing hard falls or broken toes, and was often chastised by others. 
+
+This carelessness, one evening after a successful days work, turned what started as a manageable accident, into a catastrophe. In the evenings, free of the daily audiences, most members of the company would congregate on the main stage to practice their acts in companionship. Valakos had been lifting weights by the bigtop's exit, furthest away from Ember, the fire genasi flame dancer, so that he could be as cool as possible and feel the breeze while he sweated. He was pushing himself, practicing with the heaviest weight he had held thus far, when Hodan told him to go and pick up the animal feed from town. This was a weekly task for Valakos, due to his high carrying capacity. Unthinking, Val immediately put the weight down, and had left the tent before it had settled in place. The weight wobbled, and, Valakos already gone, tipped onto its side, pinning the exit shut. Nobody noticed, absorbed in their practices; the acrobats were swinging on the trapezes, watched by Heliar; the clown, Topsy, adjusting his never ending handkerchief; Ember was trying out a new trick, shooting magical fire in all directions while she danced. The remainder of the company in the bigtop - the twins, Erfir child sorcerer magician and his dancing bard assistant Ocyne were watching from the stalls, mesmerised by her. Then, she twisted and she tripped. A bolt of fire shot from her hand, rocketing into the soft, flammable fabric of the tent. The big top quickly errupted in flame, spreading like a potent disease from the canvas, to the straw on the ground, to the wooden frame in seconds. 
+
+Pandemonium. A mad rush to the exit. And there sat Valakos' weight, unmovable. As they struggled and heaved to lift it, the magical flames raced around the bigtop, transforming it into a ring of fire. Valakos, animal feed in hand, turned at the distant sound of screaming. He watched the smoke rise from the circus, and dropped everything. He ran, faster than he had ever run, his body already aching from his earlier exertions, and heard a thunderous boom, which shook the ground, as he approached. 
+
+By this point, the rest of the company had surrounded the big top, frantically throwing water onto the flames. There were open gaps in the fabric now, it having burnt away, but Valakos could barely see inside with the fire obscuring his vision. Topsy, his skin melting along with his makeup, clawed through one of the openings in the fabric, collapsed. He was quickly doused with a bucket of water, but he lay still. Val, resistant to fire, leapt over the prone body of the clown, his friend, and rushed into the flames. Someone was wailing, but he couldn't tell who. There was coughing, sputtering around him, and Val's eyes darted around the tent. They landed on his weight, reflecting the light of the fire as it lay, blocking the exit. Val's heart sank. A deep despair flooded through him. He turned from the sight, unable to bear it. As Val strained his eyes in search of his company, forcing his mind to focus on the emergency at hand, he realised what the source of the noise he had heard while running to the bigtop was. The looming, thick wooden poles, used to hold the tightrope and trapezes for the acrobats, had fallen and smashed into the ground. He could see bodies around them. Two lay crumpled, with snapped, protruding bones that could only have been caused by falling, as the flames ravaged them. The acrobats. Val pushed down his despair, his desperation, and looked to the others. 
+
+Some distance away, a lower body protruded from beneath one of the poles, with the blood beneath the unfortunate soul boiling in the heat, its upper half entirely crushed. It wore the practice shoes of Ember. Valakos vomited. His eyes flung around for anyone else, and saw his ringmaster beneath the other pole, a terrifying inversion of Ember. Heliar's legs were crushed, a pulp, but his eyes were open, blinking rapidly. Valakos rushed to his mentor, and started straining to lift the pole from him. Flames licked at his body, and despite his resistance, his flesh had begun to sizzle and pain was racing through him. Heliar raised a weak hand. "The twins," he wheezed, and waved it in the direction of the stalls. Valakos followed his gesture, and saw the two children, the boy holding a flickering resilient sphere over himself and his sister. He was talented, knowing a spell of that level at his age, but it was only partially effective. The flames that were inside the sphere already, when he cast the spell, were licking at the children's legs, and he was wobbling on his feet as the fire ate away at him.
+
+Valakos shared a brief look with his ringmaster, and rushed to the children. Just in time too, as Erfir's eyes rolled back into his head and ___ something happened and he was unconcious so the spell ended. Without the spell, the ground beneath the children burst with a new roaring flame. Val caught the boy as he fell, and scooped Ocyne up under his other arm. Turning his back to the fabric to minimise the damage to the children, he threw himself through the weakened barrier and landed hard on his burning back, the twins clutched to his chest. He screamed, voice now harsh from the smoke, and someone, he couldn't tell who, lifted the children from him. He rose, and as he pushed back through the exit he'd made, into the main stage once again, he thought he heard someone outside begging him not to go back in. But he had no choice, Heliar was still in there. 
+
+Val screamed as he tried to lift the pole off of Heliar's legs. The fire was burning and biting at his skin, growing in intensity every second. He tried. He tried, and tried, and tried, but he couldn't lift it. He wasn't strong enough. He would have stayed, he would have died there that day, if it weren't for Heliar placing a melted hand on Val's own. "Go," Heliar mouthed. Valakos had never disobeyed his ringmaster, never intentionally, and Heliar knew that he wouldn't even do so now. Unable bear the fire any longer, and now under orders, Val screamed in pain and anguish and self loathing, and fled. He burst out of the bigtop, and everything went dark. 
+
+The Freelands have a surprisingly skilled healer population. His burns were treated, and by the time Valakos woke, much of his body was covered by bandages. Elina Phirell, the druid animal trainer, was sat next to his bed. He burst into sobs as he saw her, repeating "my fault, it's my fault," until he couldn't breathe.
+
+Of the seven people in the bigtop when the fire started, only the twins survived Erfir's legs were so badly damaged that he would be wheelchair bound for the rest of his life, and his sister would forever walk with a cane. Topsy, though he made it out of the tent, died of his wounds soon after. Everyone who visited him kept telling Val that it was an accident. It was an accident. They didn't blame him. They forgave him, they loved him. They would always love him. But it wasn't enough. Valakos couldn't face the remainder of the company, his family, after the devastation he'd caused. Once he could walk, Valakos left. His note,

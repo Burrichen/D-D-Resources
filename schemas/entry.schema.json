@@ -1,0 +1,50 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://d-d-resources.local/schemas/entry.schema.json",
+  "title": "Canonical content entry frontmatter",
+  "description": "Frontmatter required on every file in content/. Type-specific fields (race, alignment, rarity, cr, ...) are allowed as extra top-level keys in snake_case.",
+  "type": "object",
+  "required": ["id", "type", "name", "status", "sources", "updated"],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z-]+/[a-z0-9]+(-[a-z0-9]+)*$",
+      "description": "Stable identifier '<type>/<slug>'. Never reuse or rename without adding the old id to 'aliases'."
+    },
+    "type": {
+      "enum": ["character", "location", "faction", "deity", "species", "creature", "item", "spell", "mechanic", "table", "lore", "event", "campaign", "story", "misc"]
+    },
+    "name": { "type": "string", "minLength": 1 },
+    "aliases": { "type": "array", "items": { "type": "string" } },
+    "summary": { "type": "string", "description": "One sentence, plain text. Used by consumers for previews/search." },
+    "setting": { "type": "string", "description": "World/setting this belongs to, if not the default world." },
+    "tags": { "type": "array", "items": { "type": "string", "pattern": "^[a-z0-9]+(-[a-z0-9]+)*(/[a-z0-9]+(-[a-z0-9]+)*)*$" } },
+    "related": {
+      "type": "array",
+      "items": { "type": "string", "pattern": "^[a-z-]+/[a-z0-9]+(-[a-z0-9]+)*$" },
+      "description": "ids of related entries."
+    },
+    "status": {
+      "enum": ["canonical", "draft", "needs-review", "deprecated"],
+      "description": "canonical = reviewed; draft = promoted but incomplete; needs-review = open conflict in review/conflicts.md; deprecated = superseded (keep for old ids)."
+    },
+    "sources": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": ["source", "path", "hash"],
+        "properties": {
+          "source": { "type": "string", "description": "id from sources.yaml" },
+          "path": { "type": "string", "description": "path of the raw file, relative to raw/<source>/" },
+          "hash": { "type": "string", "description": "content_hash of the raw file when it was last merged" },
+          "role": { "enum": ["primary", "merged", "superseded"], "default": "merged" }
+        }
+      }
+    },
+    "licence": { "type": "string" },
+    "images": { "type": "array", "items": { "type": "string" }, "description": "Repo-relative paths under assets/." },
+    "updated": { "type": "string", "format": "date" }
+  },
+  "additionalProperties": true
+}
