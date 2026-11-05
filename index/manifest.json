@@ -1,7 +1,1934 @@
 {
- "generated": "2026-11-04T10:56:54+00:00",
- "count": 0,
- "by_type": {},
- "aliases": {},
- "entries": []
+ "generated": "2026-11-05T20:17:45+00:00",
+ "count": 55,
+ "by_type": {
+  "campaign": 1,
+  "creature": 21,
+  "deity": 10,
+  "location": 10,
+  "lore": 6,
+  "mechanic": 5,
+  "misc": 1,
+  "table": 1
+ },
+ "aliases": {
+  "airship sailor": "mechanic/sailor-airship",
+  "aureluch": "location/aureluch",
+  "azun": "deity/azun",
+  "carceri": "location/carceri",
+  "chauntea": "deity/chauntea",
+  "contamination": "mechanic/haze-contamination",
+  "cosmology": "lore/world-tree",
+  "cragback": "creature/cragback",
+  "creatures": "lore/creatures",
+  "creatures of kurovia": "lore/creatures",
+  "dornia": "deity/dornia",
+  "driftling": "creature/driftling",
+  "dustkip": "creature/dustkip",
+  "elyrra": "creature/elyrra",
+  "god of justice": "deity/tyr",
+  "god of luck": "deity/hermod",
+  "god of night and of sun": "deity/azun",
+  "god of protection": "deity/helm",
+  "god of the dead": "deity/kelemvor",
+  "goddess of agriculture": "deity/chauntea",
+  "goddess of craft and all-smiths": "deity/gond",
+  "goddess of craft and smiths": "deity/gond",
+  "goddess of knowledge": "deity/dornia",
+  "gods": "lore/pantheon",
+  "gond": "deity/gond",
+  "halingo": "location/halingo",
+  "haze": "mechanic/haze-contamination",
+  "haze (contamination)": "mechanic/haze-contamination",
+  "haze (mechanic)": "mechanic/haze-contamination",
+  "helm": "deity/helm",
+  "heresy": "location/heresy",
+  "hermod": "deity/hermod",
+  "hoshikui": "creature/hoshikui",
+  "hundred gods": "lore/umbuso",
+  "keelwarden": "creature/knelhen",
+  "kelemvor": "deity/kelemvor",
+  "kharuun": "creature/kharuun",
+  "kharvassa": "creature/kharvassa",
+  "khundur": "location/khundur",
+  "khundur (pre-destruction)": "location/khundur",
+  "knelhen": "creature/knelhen",
+  "korthalax": "creature/korthalax",
+  "korthalax umbuso": "creature/korthalax",
+  "lanthart": "creature/lanthart",
+  "limbo": "location/limbo",
+  "lingering injuries": "mechanic/lingering-injuries",
+  "lingering injurires": "mechanic/lingering-injuries",
+  "mechanus": "location/mechanus",
+  "morgenwalde": "location/morgenwelde",
+  "morgenwelde": "location/morgenwelde",
+  "morgwen": "location/morgenwelde",
+  "morwengrad": "location/morgenwelde",
+  "mournback": "creature/mournback",
+  "nhalyss": "creature/nhalyss",
+  "oblate archaeologist": "mechanic/oblate-archaeologist",
+  "oblate archeologist": "mechanic/oblate-archaeologist",
+  "ordon": "location/ordon",
+  "oruvath": "creature/oruvath",
+  "pantheon": "lore/pantheon",
+  "petrification": "mechanic/petrification",
+  "primus": "deity/primus",
+  "ritual husk": "creature/ritual-husk",
+  "sailor (airship)": "mechanic/sailor-airship",
+  "saqramallki": "creature/saqramallki",
+  "session 16": "campaign/session-16-17",
+  "session 16 + 17": "campaign/session-16-17",
+  "shellbill": "creature/shellbill",
+  "snus": "creature/sunsnare",
+  "star-eater": "creature/hoshikui",
+  "sunsnare": "creature/sunsnare",
+  "tathis": "creature/tathis",
+  "the black saint": "creature/veyrath",
+  "the buried choir": "creature/oruvath",
+  "the far realm": "location/the-far-realm",
+  "the following sign": "creature/tathis",
+  "the hanging orchard": "creature/saqramallki",
+  "the hundred gods": "lore/umbuso",
+  "the invitation": "creature/ulveth",
+  "the kelemvor": "deity/kelemvor",
+  "the knot of ordon": "location/aureluch",
+  "the malign attractor": "creature/ulveth",
+  "the mark that hunts": "creature/tathis",
+  "the mother below": "creature/kharvassa",
+  "the mother of strangers": "creature/elyrra",
+  "the pantheon": "lore/pantheon",
+  "the planes": "lore/world-tree",
+  "the proliferant": "creature/elyrra",
+  "the rain-strider": "creature/vaelkr",
+  "the ravager worm": "deity/yihdothrus",
+  "the rot-crowned root": "creature/saqramallki",
+  "the shape in the smoke": "creature/veyrath",
+  "the star-eater": "creature/hoshikui",
+  "the unblinking hunger": "creature/nhalyss",
+  "the witness without distance": "creature/nhalyss",
+  "the world tree": "lore/world-tree",
+  "timeline": "lore/timeline",
+  "tyr": "deity/tyr",
+  "uhi": "lore/umbuso-hazard-index",
+  "ulveth": "creature/ulveth",
+  "umb-000": "lore/umbuso",
+  "umb-001": "creature/hoshikui",
+  "umb-002": "creature/vaelkr",
+  "umb-003": "creature/kharvassa",
+  "umb-004": "creature/veyrath",
+  "umb-005": "creature/oruvath",
+  "umb-006": "creature/nhalyss",
+  "umbuso": "lore/umbuso",
+  "umbuso hazard index": "lore/umbuso-hazard-index",
+  "vaelkr": "creature/vaelkr",
+  "veyrath": "creature/veyrath",
+  "weather (generic) - d100 varient": "table/weather-generic-d100-varient",
+  "weather (generic) -2d6 varient": "table/weather-generic-d100-varient",
+  "welcome": "misc/welcome",
+  "widespread creatures": "lore/creatures",
+  "world tree": "lore/world-tree",
+  "yhidothrus": "deity/yihdothrus",
+  "yihdothrus": "deity/yihdothrus"
+ },
+ "entries": [
+  {
+   "id": "campaign/session-16-17",
+   "type": "campaign",
+   "name": "Session 16 + 17",
+   "aliases": [
+    "Session 16"
+   ],
+   "summary": null,
+   "setting": null,
+   "tags": null,
+   "related": null,
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/campaigns/session-16-17.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "creature/cragback",
+   "type": "creature",
+   "name": "Cragback",
+   "aliases": null,
+   "summary": "Rock-backed beast of Ordon and Hjarthland: territorial in the wild, a prized pack animal when domesticated.",
+   "setting": null,
+   "tags": [
+    "beast",
+    "domesticated",
+    "widespread"
+   ],
+   "related": [
+    "lore/creatures",
+    "location/ordon"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Cragback.png"
+   ],
+   "path": "content/creatures/cragback.md",
+   "fields": {
+    "licence": "own-work",
+    "creature_type": "Beast",
+    "rarity": "Uncommon",
+    "cr": "1",
+    "regions": [
+     "Ordon",
+     "Hjarthland"
+    ],
+    "habitat": "Mountains, rocky highlands and trade routes",
+    "temperament": "Aggressive when wild, dependable when domesticated"
+   }
+  },
+  {
+   "id": "creature/driftling",
+   "type": "creature",
+   "name": "Driftling",
+   "aliases": null,
+   "summary": "Small, lazy, loyal semi-aquatic mammal that floats downstream on its back through the rivers of four regions.",
+   "setting": null,
+   "tags": [
+    "beast",
+    "aquatic",
+    "widespread"
+   ],
+   "related": [
+    "lore/creatures",
+    "location/ordon"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Drifling.png"
+   ],
+   "path": "content/creatures/driftling.md",
+   "fields": {
+    "licence": "own-work",
+    "epithet": "Little travellers of Kurovia's rivers",
+    "creature_type": "Beast",
+    "rarity": "Common",
+    "cr": "1/8",
+    "habitat": "Rivers, lakes, estuaries and sheltered coastlines",
+    "regions": [
+     "Ordon",
+     "Shinkira",
+     "Hjarthland",
+     "Nareth"
+    ],
+    "diet": "Fish, shellfish, aquatic plants and discarded food",
+    "temperament": "Lazy, social and loyal"
+   }
+  },
+  {
+   "id": "creature/dustkip",
+   "type": "creature",
+   "name": "Dustkip",
+   "aliases": null,
+   "summary": "Harmless yellow-scaled desert creature of Halingo, often kept as a pet; 'alive as a Dustkip' means a survivor.",
+   "setting": null,
+   "tags": [
+    "beast",
+    "domesticated",
+    "desert"
+   ],
+   "related": [
+    "lore/creatures",
+    "location/halingo"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Dustkip.png"
+   ],
+   "path": "content/creatures/dustkip.md",
+   "fields": {
+    "licence": "own-work",
+    "creature_type": "Beast",
+    "rarity": "Common",
+    "cr": "0",
+    "regions": [
+     "Halingo"
+    ],
+    "habitat": "Deserts, scrublands and settlements",
+    "temperament": "Timid, curious and affectionate"
+   }
+  },
+  {
+   "id": "creature/elyrra",
+   "type": "creature",
+   "name": "Elyrra",
+   "aliases": [
+    "The Mother of Strangers",
+    "The Proliferant"
+   ],
+   "summary": "The Mother of Strangers: an Umbuso whose touch makes living organisms grow other, unrelated life.",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "hundred-gods"
+   ],
+   "related": [
+    "lore/umbuso",
+    "lore/umbuso-hazard-index"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Elyrra.png"
+   ],
+   "path": "content/creatures/elyrra.md",
+   "fields": {
+    "licence": "own-work",
+    "classification": "Umbuso",
+    "archive": "UMB-052",
+    "archive_classification": "BIOLOGICAL CONTAMINATION HAZARD",
+    "epithet": "The Mother of Strangers",
+    "archive_title": "The Proliferant",
+    "regions": [
+     "Multiple",
+     "Unknown"
+    ],
+    "primary_hazard": "Heterologous Proliferation",
+    "archive_status": "Active — Unlocated",
+    "uhi": "3.17-III",
+    "uhi_assessment": "S4 / L5 / A3 / C1 / P2 / K4",
+    "hazard_grade": "Severe"
+   }
+  },
+  {
+   "id": "creature/hoshikui",
+   "type": "creature",
+   "name": "Hoshikui",
+   "aliases": [
+    "The Star-Eater",
+    "Star-Eater",
+    "UMB-001"
+   ],
+   "summary": "The Star-Eater: a lost Shinkiran Umbuso, a vast black shape trailing yellow lights, remembered in village warnings.",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "hundred-gods"
+   ],
+   "related": [
+    "lore/umbuso",
+    "lore/umbuso-hazard-index"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Hoshikui.png"
+   ],
+   "path": "content/creatures/hoshikui.md",
+   "fields": {
+    "licence": "own-work",
+    "classification": "Umbuso",
+    "archive": "UMB-017",
+    "regions": [
+     "Shinkira"
+    ],
+    "archive_status": "Lost; possible surviving entity",
+    "rarity": "Extremely Rare",
+    "threat": "Catastrophic",
+    "habitat": "Mountain valleys, agricultural regions, old shrines and isolated settlements",
+    "first_record": "Unknown; references predate surviving Shinkiran records",
+    "uhi": "2.50-III",
+    "uhi_assessment": "S3 / L2 / A3 / C2 / P3 / K2",
+    "hazard_grade": "Severe"
+   }
+  },
+  {
+   "id": "creature/kharuun",
+   "type": "creature",
+   "name": "Kharuun",
+   "aliases": null,
+   "summary": "Faceless, crystal-armoured aberration of Targoth that distorts weight around itself, lifting stones before bringing them crashing down.",
+   "setting": null,
+   "tags": [
+    "aberration",
+    "mountain",
+    "axius"
+   ],
+   "related": [
+    "lore/creatures"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Kharuun.png"
+   ],
+   "path": "content/creatures/kharuun.md",
+   "fields": {
+    "licence": "own-work",
+    "epithet": "The Faceless Hornbeast",
+    "creature_type": "Aberration",
+    "rarity": "Rare",
+    "cr": "8",
+    "regions": [
+     "Targoth"
+    ],
+    "habitat": "Mountains, crater fields and rocky wastes",
+    "diet": "Unknown",
+    "temperament": "Territorial",
+    "primary_hazard": "Spatial distortion"
+   }
+  },
+  {
+   "id": "creature/kharvassa",
+   "type": "creature",
+   "name": "Kharvassa",
+   "aliases": [
+    "The Mother Below",
+    "UMB-003"
+   ],
+   "summary": "The Mother Below: an immense subterranean Umbuso beneath Halingo's deep desert, mother of the Sandwyrms.",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "hundred-gods"
+   ],
+   "related": [
+    "lore/umbuso",
+    "lore/umbuso-hazard-index",
+    "location/halingo"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Kharvassa.png"
+   ],
+   "path": "content/creatures/kharvassa.md",
+   "fields": {
+    "licence": "own-work",
+    "classification": "Umbuso",
+    "archive": "UMB-028",
+    "archive_classification": "RESTRICTED BIOLOGICAL RECORD",
+    "epithet": "The Mother Below",
+    "regions": [
+     "Halingo"
+    ],
+    "environment": "Deep Desert / Subterranean",
+    "related_creatures": "Sandwyrms",
+    "rarity": "Extremely Rare",
+    "threat": "Catastrophic",
+    "archive_status": "Active — Dormant",
+    "uhi": "2.00-II",
+    "uhi_assessment": "S2 / L1 / A3 / C1 / P3 / K2",
+    "hazard_grade": "Catastrophic"
+   }
+  },
+  {
+   "id": "creature/knelhen",
+   "type": "creature",
+   "name": "Knelhen",
+   "aliases": [
+    "Keelwarden"
+   ],
+   "summary": "Coral-shelled guardian creature seen only around Armada: gentle with its people, ferocious in defence of its territory.",
+   "setting": null,
+   "tags": [
+    "monstrosity",
+    "aquatic",
+    "guardian"
+   ],
+   "related": [
+    "lore/creatures"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Knelhen.png"
+   ],
+   "path": "content/creatures/knelhen.md",
+   "fields": {
+    "licence": "own-work",
+    "creature_type": "Monstrosity",
+    "rarity": "Very Rare",
+    "cr": "8",
+    "regions": [
+     "Armada"
+    ],
+    "habitat": "Shipyards, floating districts and the waters around Armada",
+    "temperament": "Friendly, watchful and extremely dangerous"
+   }
+  },
+  {
+   "id": "creature/korthalax",
+   "type": "creature",
+   "name": "Korthalax",
+   "aliases": [
+    "Korthalax Umbuso"
+   ],
+   "summary": "Huge, angered Umbuso predator (CR 14) from a v2 planning statblock; no lore written yet.",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "hundred-gods",
+    "statblock"
+   ],
+   "related": [
+    "lore/umbuso"
+   ],
+   "status": "draft",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/creatures/korthalax.md",
+   "fields": {
+    "licence": "own-work",
+    "classification": "Umbuso",
+    "creature_type": "Ancient Creature",
+    "cr": "14"
+   }
+  },
+  {
+   "id": "creature/lanthart",
+   "type": "creature",
+   "name": "Lanthart",
+   "aliases": null,
+   "summary": "Small, friendly deer-like creature of Nareth whose glowing tail-orb lights the herd's way through the rainforest.",
+   "setting": null,
+   "tags": [
+    "beast",
+    "forest",
+    "swamp"
+   ],
+   "related": [
+    "lore/creatures"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Lanthart.png"
+   ],
+   "path": "content/creatures/lanthart.md",
+   "fields": {
+    "licence": "own-work",
+    "creature_type": "Beast",
+    "rarity": "Uncommon",
+    "cr": "1/8",
+    "regions": [
+     "Nareth"
+    ],
+    "habitat": "Rainforests, riverbanks and swamps",
+    "temperament": "Friendly and curious"
+   }
+  },
+  {
+   "id": "creature/mournback",
+   "type": "creature",
+   "name": "Mournback",
+   "aliases": null,
+   "summary": "Enormous, asymmetrical long-armed abomination that haunts ruins and keeps fighting through catastrophic injury.",
+   "setting": null,
+   "tags": [
+    "abomination",
+    "dangerous",
+    "axius"
+   ],
+   "related": [
+    "lore/umbuso",
+    "lore/creatures"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Mournback.png"
+   ],
+   "path": "content/creatures/mournback.md",
+   "fields": {
+    "licence": "own-work",
+    "epithet": "The Long-Armed Wretch",
+    "creature_type": "Abomination",
+    "rarity": "Rare",
+    "cr": "12",
+    "diet": "Carnivorous",
+    "temperament": "Territorial / Highly Aggressive",
+    "habitat": "Ruins, forests, caves and abandoned settlements",
+    "activity": "Primarily crepuscular / nocturnal"
+   }
+  },
+  {
+   "id": "creature/nhalyss",
+   "type": "creature",
+   "name": "Nhalyss",
+   "aliases": [
+    "The Unblinking Hunger",
+    "The Witness Without Distance",
+    "UMB-006"
+   ],
+   "summary": "The Unblinking Hunger: the only Umbuso rated Existential, manifesting worldwide as eyes and mouths.",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "hundred-gods"
+   ],
+   "related": [
+    "lore/umbuso",
+    "lore/umbuso-hazard-index"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Nhalyss.png"
+   ],
+   "path": "content/creatures/nhalyss.md",
+   "fields": {
+    "licence": "own-work",
+    "classification": "Umbuso",
+    "archive": "UMB-097",
+    "archive_classification": "GLOBAL HAZARD // VISUAL MATERIAL RESTRICTED",
+    "epithet": "The Unblinking Hunger",
+    "archive_title": "The Witness Without Distance",
+    "regions": [
+     "Global"
+    ],
+    "environment": "Unrestricted",
+    "rarity": "Extremely Rare",
+    "threat": "EXISTENTIAL",
+    "archive_status": "Active — Global",
+    "known_individuals": "Unknown",
+    "uhi": "1.00-I",
+    "uhi_assessment": "S1 / L1 / A1 / C1 / P1 / K1",
+    "hazard_grade": "Existential"
+   }
+  },
+  {
+   "id": "creature/oruvath",
+   "type": "creature",
+   "name": "Oruvath",
+   "aliases": [
+    "The Buried Choir",
+    "UMB-005"
+   ],
+   "summary": "The Buried Choir: an Umbuso found only among extremely old ruins, whose many mouths mimic human voices.",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "hundred-gods"
+   ],
+   "related": [
+    "lore/umbuso",
+    "lore/umbuso-hazard-index"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Oruvath.png"
+   ],
+   "path": "content/creatures/oruvath.md",
+   "fields": {
+    "licence": "own-work",
+    "classification": "Umbuso",
+    "archive": "UMB-041",
+    "archive_classification": "MULTIREGIONAL RECORD",
+    "epithet": "The Buried Choir",
+    "regions": [
+     "Multiple",
+     "Unknown"
+    ],
+    "environment": "Ancient Ruins / Subterranean",
+    "rarity": "Extremely Rare",
+    "threat": "Catastrophic",
+    "archive_status": "Active — Unlocated",
+    "known_individuals": "Unknown",
+    "uhi": "2.67-III",
+    "uhi_assessment": "S3 / L2 / A3 / C2 / P4 / K2",
+    "hazard_grade": "Severe"
+   }
+  },
+  {
+   "id": "creature/ritual-husk",
+   "type": "creature",
+   "name": "Ritual Husk",
+   "aliases": null,
+   "summary": "Half-formed arcane horror left behind by an interrupted or miscast ritual; only completing the ritual truly destroys it.",
+   "setting": null,
+   "tags": [
+    "aberration",
+    "magic",
+    "widespread"
+   ],
+   "related": [
+    "lore/creatures"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Ritual_Husk.png"
+   ],
+   "path": "content/creatures/ritual-husk.md",
+   "fields": {
+    "licence": "own-work",
+    "creature_type": "Aberration",
+    "rarity": "Very Rare",
+    "cr": "9",
+    "regions": [
+     "Worldwide"
+    ],
+    "habitat": "Ruins, ritual sites, battlefields and places of magical collapse",
+    "temperament": "Hostile, unstable and unnervingly purposeful"
+   }
+  },
+  {
+   "id": "creature/saqramallki",
+   "type": "creature",
+   "name": "Saqramallki",
+   "aliases": [
+    "The Hanging Orchard",
+    "The Rot-Crowned Root"
+   ],
+   "summary": "The Hanging Orchard: a Narethian Umbuso that passes for a rotted tree hung with corpse-like pods.",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "hundred-gods"
+   ],
+   "related": [
+    "lore/umbuso",
+    "lore/umbuso-hazard-index"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Saqramallki.png"
+   ],
+   "path": "content/creatures/saqramallki.md",
+   "fields": {
+    "licence": "own-work",
+    "classification": "Umbuso",
+    "archive": "UMB-034",
+    "archive_classification": "REGIONAL BIOLOGICAL THREAT",
+    "pronunciation": "SAH-krah-MAHL-kee",
+    "epithet": "The Hanging Orchard",
+    "archive_title": "The Rot-Crowned Root",
+    "regions": [
+     "Nareth"
+    ],
+    "primary_hazard": "Territorial ambush predation",
+    "archive_status": "Active — Nareth Interior",
+    "uhi": "3.33-III",
+    "uhi_assessment": "S4 / L3 / A2 / C3 / P3 / K5",
+    "hazard_grade": "Severe"
+   }
+  },
+  {
+   "id": "creature/shellbill",
+   "type": "creature",
+   "name": "Shellbill",
+   "aliases": null,
+   "summary": "Docile, duck-billed, shelled semi-aquatic creature common across the waterways of Ordon, Skgurr, Shinkira and Nareth.",
+   "setting": null,
+   "tags": [
+    "beast",
+    "aquatic",
+    "widespread",
+    "domesticated"
+   ],
+   "related": [
+    "lore/creatures",
+    "location/ordon"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Shellbill.png"
+   ],
+   "path": "content/creatures/shellbill.md",
+   "fields": {
+    "licence": "own-work",
+    "epithet": "A widespread semi-aquatic creature",
+    "diet": "Omnivore",
+    "temperament": "Docile / Social",
+    "habitat": "Freshwater, wetlands, sheltered coasts",
+    "regions": [
+     "Ordon",
+     "Skgurr",
+     "Shinkira",
+     "Nareth"
+    ],
+    "activity": "Diurnal",
+    "social_structure": "Family groups / flocks",
+    "danger": "Low",
+    "domesticated": "Partially",
+    "rarity": "Common"
+   }
+  },
+  {
+   "id": "creature/sunsnare",
+   "type": "creature",
+   "name": "Sunsnare",
+   "aliases": [
+    "Snus"
+   ],
+   "summary": "Burrowing Halingan ambush predator that lures prey with a false desert flower and drags it beneath the sand.",
+   "setting": null,
+   "tags": [
+    "monstrosity",
+    "desert",
+    "ambush"
+   ],
+   "related": [
+    "lore/creatures",
+    "location/halingo"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Snus.png"
+   ],
+   "path": "content/creatures/sunsnare.md",
+   "fields": {
+    "licence": "own-work",
+    "creature_type": "Monstrosity",
+    "rarity": "Uncommon",
+    "cr": "2",
+    "regions": [
+     "Halingo"
+    ],
+    "habitat": "Deserts, dry scrubland and dune edges",
+    "temperament": "Aggressive ambush predator"
+   }
+  },
+  {
+   "id": "creature/tathis",
+   "type": "creature",
+   "name": "Tathis",
+   "aliases": [
+    "The Following Sign",
+    "The Mark That Hunts"
+   ],
+   "summary": "The Following Sign: an Umbuso that manifests through a rune; whoever recognises it is stalked and killed.",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "hundred-gods"
+   ],
+   "related": [
+    "lore/umbuso",
+    "lore/umbuso-hazard-index"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/creatures/tathis.md",
+   "fields": {
+    "licence": "own-work",
+    "classification": "Umbuso",
+    "archive": "UMB-076",
+    "archive_classification": "COGNITOHAZARD // VISUAL MATERIAL RESTRICTED",
+    "epithet": "The Following Sign",
+    "archive_title": "The Mark That Hunts",
+    "regions": [
+     "Multiple",
+     "Symbol-linked"
+    ],
+    "primary_hazard": "Cognitohazardous rune exposure",
+    "archive_status": "Active — Information-associated",
+    "uhi": "3.83-IV",
+    "uhi_assessment": "S5 / L2 / A1 / C5 / P5 / K5",
+    "hazard_grade": "Hazardous"
+   }
+  },
+  {
+   "id": "creature/ulveth",
+   "type": "creature",
+   "name": "Ulveth",
+   "aliases": [
+    "The Invitation",
+    "The Malign Attractor"
+   ],
+   "summary": "The Invitation: an Umbuso known only through a mark that draws harmful people, creatures and events to the object bearing it.",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "hundred-gods"
+   ],
+   "related": [
+    "lore/umbuso",
+    "lore/umbuso-hazard-index"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/creatures/ulveth.md",
+   "fields": {
+    "licence": "own-work",
+    "classification": "Umbuso",
+    "archive": "UMB-033",
+    "archive_classification": "SYMBOL-ASSOCIATED HAZARD",
+    "epithet": "The Invitation",
+    "archive_title": "The Malign Attractor",
+    "regions": [
+     "Multiple",
+     "Symbol-linked"
+    ],
+    "primary_hazard": "Malign Convergence",
+    "physical_form": "Unconfirmed",
+    "archive_status": "Active — Information-associated",
+    "uhi": "3.67-IV",
+    "uhi_assessment": "S4 / L3 / A1 / C5 / P5 / K4",
+    "hazard_grade": "Hazardous"
+   }
+  },
+  {
+   "id": "creature/vaelkr",
+   "type": "creature",
+   "name": "Vaelkr",
+   "aliases": [
+    "The Rain-Strider",
+    "UMB-002"
+   ],
+   "summary": "The Rain-Strider: an immense, emaciated Umbuso seen walking Skgurr's coastal waters in heavy rain.",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "hundred-gods"
+   ],
+   "related": [
+    "lore/umbuso",
+    "lore/umbuso-hazard-index"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Vaelkr.png"
+   ],
+   "path": "content/creatures/vaelkr.md",
+   "fields": {
+    "licence": "own-work",
+    "classification": "Umbuso",
+    "archive": "UMB-063",
+    "archive_classification": "PARTIAL ACCESS",
+    "epithet": "The Rain-Strider",
+    "regions": [
+     "Skgurr"
+    ],
+    "environment": "Coastline / Coastal Waters",
+    "rarity": "Extremely Rare",
+    "threat": "Extreme",
+    "archive_status": "Active — Location Unknown",
+    "uhi": "2.83-III",
+    "uhi_assessment": "S3 / L2 / A3 / C2 / P4 / K3",
+    "hazard_grade": "Severe"
+   }
+  },
+  {
+   "id": "creature/veyrath",
+   "type": "creature",
+   "name": "Veyrath",
+   "aliases": [
+    "The Black Saint",
+    "The Shape in the Smoke",
+    "UMB-004"
+   ],
+   "summary": "The Black Saint: a never-clearly-seen Umbuso silhouette standing above Ordon's industrial skylines.",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "hundred-gods"
+   ],
+   "related": [
+    "lore/umbuso",
+    "lore/umbuso-hazard-index",
+    "location/ordon"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": [
+    "assets/miraheze-kurovia/Veyrath.png"
+   ],
+   "path": "content/creatures/veyrath.md",
+   "fields": {
+    "licence": "own-work",
+    "classification": "Umbuso",
+    "archive": "UMB-084",
+    "archive_classification": "VISUAL RECORD RESTRICTED",
+    "epithet": "The Black Saint",
+    "archive_title": "The Shape in the Smoke",
+    "regions": [
+     "Ordon"
+    ],
+    "environment": "Urban / Industrial",
+    "rarity": "Extremely Rare",
+    "threat": "Extreme",
+    "archive_status": "Active — Intermittent",
+    "physical_form": "UNCONFIRMED",
+    "uhi": "2.67-III",
+    "uhi_assessment": "S3 / L3 / A3 / C3 / P2 / K2",
+    "hazard_grade": "Severe"
+   }
+  },
+  {
+   "id": "deity/azun",
+   "type": "deity",
+   "name": "Azun",
+   "aliases": [
+    "Azun",
+    "God of Night and of Sun"
+   ],
+   "summary": "Major god of night and of sun, depicted as two beings twinned together. Chaotic evil, jealous, and sister to Tyr.",
+   "setting": null,
+   "tags": [
+    "pantheon/major",
+    "light",
+    "night",
+    "sun"
+   ],
+   "related": [
+    "deity/tyr",
+    "deity/dornia",
+    "lore/pantheon"
+   ],
+   "status": "draft",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/deities/azun.md",
+   "fields": {
+    "licence": "own-work",
+    "tier": "major",
+    "alignment": "CE",
+    "domains": [
+     "light"
+    ],
+    "siblings": [
+     "deity/tyr"
+    ]
+   }
+  },
+  {
+   "id": "deity/chauntea",
+   "type": "deity",
+   "name": "Chauntea",
+   "aliases": [
+    "Chauntea",
+    "Goddess of Agriculture"
+   ],
+   "summary": "Goddess of agriculture, and one of the few gods Kelemvor keeps company with.",
+   "setting": null,
+   "tags": [
+    "agriculture"
+   ],
+   "related": [
+    "deity/kelemvor",
+    "deity/hermod",
+    "lore/pantheon"
+   ],
+   "status": "draft",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/deities/chauntea.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "deity/dornia",
+   "type": "deity",
+   "name": "Dornia",
+   "aliases": [
+    "Dornia",
+    "Goddess of Knowledge"
+   ],
+   "summary": "Goddess of knowledge. Gond gives her most of her creations, and Gond can be considered an aspect of her.",
+   "setting": null,
+   "tags": [
+    "knowledge"
+   ],
+   "related": [
+    "deity/gond",
+    "deity/azun",
+    "lore/pantheon"
+   ],
+   "status": "draft",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/deities/dornia.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "deity/gond",
+   "type": "deity",
+   "name": "Gond",
+   "aliases": [
+    "Gond",
+    "Goddess of Craft and Smiths",
+    "Goddess of Craft and All-Smiths"
+   ],
+   "summary": "Minor goddess of craft and smiths, goddess of the dwarves and advocate for womankind. Wife of Helm, whom she arms; sometimes considered an aspect of Dornia.",
+   "setting": null,
+   "tags": [
+    "pantheon/minor",
+    "craft",
+    "dwarves"
+   ],
+   "related": [
+    "deity/helm",
+    "deity/dornia",
+    "deity/tyr",
+    "lore/pantheon"
+   ],
+   "status": "draft",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/deities/gond.md",
+   "fields": {
+    "licence": "own-work",
+    "tier": "minor",
+    "alignment": "NG",
+    "domains": [
+     "knowledge"
+    ],
+    "sides_with": "neither",
+    "spouse": "deity/helm"
+   }
+  },
+  {
+   "id": "deity/helm",
+   "type": "deity",
+   "name": "Helm",
+   "aliases": [
+    "Helm",
+    "God of Protection"
+   ],
+   "summary": "Major god of protection, who believes everyone deserves protection and the world should live in peace. Married to Gond; at odds with Tyr.",
+   "setting": null,
+   "tags": [
+    "pantheon/major",
+    "protection"
+   ],
+   "related": [
+    "deity/gond",
+    "deity/tyr",
+    "lore/pantheon"
+   ],
+   "status": "draft",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/deities/helm.md",
+   "fields": {
+    "licence": "own-work",
+    "tier": "major",
+    "alignment": "LG",
+    "domains": [
+     "life"
+    ],
+    "spouse": "deity/gond",
+    "rivals": [
+     "deity/tyr"
+    ]
+   }
+  },
+  {
+   "id": "deity/hermod",
+   "type": "deity",
+   "name": "Hermod",
+   "aliases": [
+    "Hermod",
+    "God of Luck"
+   ],
+   "summary": "God of luck, and one of the few gods Kelemvor keeps company with.",
+   "setting": null,
+   "tags": [
+    "luck"
+   ],
+   "related": [
+    "deity/kelemvor",
+    "lore/pantheon"
+   ],
+   "status": "draft",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/deities/hermod.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "deity/kelemvor",
+   "type": "deity",
+   "name": "Kelemvor",
+   "aliases": [
+    "Kelemvor",
+    "God of the Dead",
+    "The Kelemvor"
+   ],
+   "summary": "God of the Dead and judge of the damned. An Old God whose name is really a title, passed from one deserving dead mortal to the next. Five holders are known.",
+   "setting": null,
+   "tags": [
+    "pantheon/major",
+    "old-god",
+    "death"
+   ],
+   "related": [
+    "lore/pantheon",
+    "deity/hermod",
+    "deity/chauntea",
+    "location/carceri"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/deities/kelemvor.md",
+   "fields": {
+    "licence": "own-work",
+    "tier": "major",
+    "old_god": true,
+    "alignment": "N",
+    "domains": [
+     "death"
+    ],
+    "holders": [
+     "Abernath",
+     "Dianye",
+     "Carvell",
+     "Wernicke",
+     "Mort"
+    ]
+   }
+  },
+  {
+   "id": "deity/primus",
+   "type": "deity",
+   "name": "Primus",
+   "aliases": null,
+   "summary": "The plane god and ruler of Mechanus. An isolationist being made of 1,182 modron programs and every metal in the planes, protective of the modrons.",
+   "setting": null,
+   "tags": [
+    "plane-god",
+    "mechanus",
+    "modrons"
+   ],
+   "related": [
+    "location/mechanus",
+    "lore/world-tree",
+    "location/limbo",
+    "lore/pantheon"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/deities/primus.md",
+   "fields": {
+    "licence": "own-work",
+    "plane": "location/mechanus",
+    "motivation": "Perfection"
+   }
+  },
+  {
+   "id": "deity/tyr",
+   "type": "deity",
+   "name": "Tyr",
+   "aliases": [
+    "Tyr",
+    "God of Justice"
+   ],
+   "summary": "God of justice who believes in \"an eye for an eye\". At odds with Helm, brother of Azun, and worshipped in Limate and Winterfort.",
+   "setting": null,
+   "tags": [
+    "justice"
+   ],
+   "related": [
+    "deity/helm",
+    "deity/azun",
+    "deity/gond",
+    "lore/pantheon"
+   ],
+   "status": "draft",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/deities/tyr.md",
+   "fields": {
+    "licence": "own-work",
+    "siblings": [
+     "deity/azun"
+    ],
+    "rivals": [
+     "deity/helm"
+    ]
+   }
+  },
+  {
+   "id": "deity/yihdothrus",
+   "type": "deity",
+   "name": "Yihdothrus",
+   "aliases": [
+    "Yihdothrus",
+    "Yhidothrus",
+    "The Ravager Worm"
+   ],
+   "summary": "A cult demon lord of the horrors of time (decay, erosion, entropy, the fear of ageing) and of worms. Name to be changed.",
+   "setting": null,
+   "tags": [
+    "pantheon/cult",
+    "demon-lord",
+    "decay",
+    "time"
+   ],
+   "related": [
+    "lore/pantheon"
+   ],
+   "status": "draft",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/deities/yihdothrus.md",
+   "fields": {
+    "licence": "own-work (concept adapted from Paizo's Yhidothrus, Pathfinder)",
+    "tier": "cult",
+    "rename_pending": true
+   }
+  },
+  {
+   "id": "location/aureluch",
+   "type": "location",
+   "name": "Aureluch",
+   "aliases": [
+    "The Knot of Ordon"
+   ],
+   "summary": "Ordon's great cliffside rail-and-freight city, the interchange that binds the country's trade together.",
+   "setting": null,
+   "tags": [
+    "ordon",
+    "city",
+    "transport"
+   ],
+   "related": [
+    "location/ordon",
+    "location/morgenwelde"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/locations/aureluch.md",
+   "fields": {
+    "licence": "own-work",
+    "pronunciation": "Awe-uh-lock",
+    "country": "Ordon",
+    "region": "Lowlands",
+    "settlement_type": "City",
+    "demonym": "Aurelian",
+    "government": "Municipal industrial council (the Gate Council)",
+    "major_industries": "Rail freight, metalworking, engineering and Morrow refinement",
+    "currency": "Standard Coin",
+    "major_transport": "Rail, chain-lifts, freight hoists and cliff roads"
+   }
+  },
+  {
+   "id": "location/carceri",
+   "type": "location",
+   "name": "Carceri",
+   "aliases": null,
+   "summary": "A prison sub-realm of Limbo, created by a pact of the Old Gods for beings who rival or offend them. It is the first demi-plane, and being locked in it is the greatest sentence in the universe.",
+   "setting": null,
+   "tags": [
+    "cosmology",
+    "planes",
+    "demi-plane",
+    "prison"
+   ],
+   "related": [
+    "location/limbo",
+    "lore/world-tree",
+    "deity/kelemvor",
+    "lore/pantheon"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/locations/carceri.md",
+   "fields": {
+    "licence": "own-work",
+    "plane_type": "demi-plane",
+    "parent": "location/limbo"
+   }
+  },
+  {
+   "id": "location/halingo",
+   "type": "location",
+   "name": "Halingo",
+   "aliases": null,
+   "summary": null,
+   "setting": null,
+   "tags": [
+    "world/country"
+   ],
+   "related": null,
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/locations/halingo.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "location/heresy",
+   "type": "location",
+   "name": "Heresy",
+   "aliases": null,
+   "summary": null,
+   "setting": null,
+   "tags": null,
+   "related": null,
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/locations/heresy.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "location/khundur",
+   "type": "location",
+   "name": "Khundur",
+   "aliases": [
+    "Khundur (Pre-Destruction)"
+   ],
+   "summary": null,
+   "setting": null,
+   "tags": null,
+   "related": null,
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/locations/khundur.md",
+   "fields": {
+    "licence": "own-work",
+    "banner_y": 0.468
+   }
+  },
+  {
+   "id": "location/limbo",
+   "type": "location",
+   "name": "Limbo",
+   "aliases": null,
+   "summary": "The Chaotic Neutral outer plane of pure, untamed creative chaos, where only willpower can impose order. It holds Carceri at its centre.",
+   "setting": null,
+   "tags": [
+    "cosmology",
+    "planes",
+    "outer-plane"
+   ],
+   "related": [
+    "lore/world-tree",
+    "location/carceri",
+    "deity/primus"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/locations/limbo.md",
+   "fields": {
+    "licence": "own-work",
+    "plane_type": "outer",
+    "alignment": "CN"
+   }
+  },
+  {
+   "id": "location/mechanus",
+   "type": "location",
+   "name": "Mechanus",
+   "aliases": null,
+   "summary": "The Lawful Neutral outer plane ruled by Primus, whose motivation is perfection. It is one of the least-visited planes, and one of the only planes a mortal has contacted directly.",
+   "setting": null,
+   "tags": [
+    "cosmology",
+    "planes",
+    "outer-plane"
+   ],
+   "related": [
+    "lore/world-tree",
+    "deity/primus",
+    "location/ordon"
+   ],
+   "status": "draft",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/locations/mechanus.md",
+   "fields": {
+    "licence": "own-work",
+    "plane_type": "outer",
+    "alignment": "LN",
+    "plane_god": "deity/primus",
+    "plane_god_motivation": "Perfection"
+   }
+  },
+  {
+   "id": "location/morgenwelde",
+   "type": "location",
+   "name": "Morgenwelde",
+   "aliases": [
+    "Morgenwalde",
+    "Morgwen",
+    "Morwengrad"
+   ],
+   "summary": "Capital of Ordon, founded around the Eye of Gold and ruled by an Oligarchy of five Proctors.",
+   "setting": null,
+   "tags": [
+    "ordon",
+    "capital",
+    "city"
+   ],
+   "related": [
+    "location/ordon",
+    "location/aureluch"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/locations/morgenwelde.md",
+   "fields": {
+    "licence": "own-work",
+    "country": "Ordon",
+    "government": "Oligarchy of Proctors"
+   }
+  },
+  {
+   "id": "location/ordon",
+   "type": "location",
+   "name": "Ordon",
+   "aliases": null,
+   "summary": "The largest and most influential country in Kurovia, an industrial oligarchy built on Morrow, its ore-form of Axius representing progress.",
+   "setting": null,
+   "tags": [
+    "ordon",
+    "country"
+   ],
+   "related": [
+    "location/morgenwelde",
+    "location/aureluch",
+    "location/halingo",
+    "mechanic/sailor-airship"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/locations/ordon.md",
+   "fields": {
+    "licence": "own-work",
+    "capital": "Morgenwelde",
+    "government": "Oligarchy of Proctors",
+    "demonym": "Ordonian",
+    "population_share": "40% of Kurovia",
+    "currency": "Standard Coin",
+    "axius_concept": "Progress",
+    "axius_manifestation": "Ore (Morrow)",
+    "attitude_to_axius": "Tolerated",
+    "major_exports": "Steam machinery, processed and manufactured mass-produced goods, armour",
+    "neighbouring_regions": [
+     "Halingo",
+     "Skgurr",
+     "Hjarthland",
+     "Bratislor"
+    ],
+    "environment": "A gloomy land of mist-shrouded mountains, steep gorges and dark forests."
+   }
+  },
+  {
+   "id": "location/the-far-realm",
+   "type": "location",
+   "name": "The Far Realm",
+   "aliases": null,
+   "summary": "The Neutral Evil outer plane of dissolution, home of Cthulhu, the Woodland Man. The Oblate awoke him, and the plane now seeps into the material world.",
+   "setting": null,
+   "tags": [
+    "cosmology",
+    "planes",
+    "outer-plane",
+    "aberrations"
+   ],
+   "related": [
+    "lore/world-tree"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/locations/the-far-realm.md",
+   "fields": {
+    "licence": "own-work",
+    "plane_type": "outer",
+    "alignment": "NE",
+    "plane_god": "Cthulhu",
+    "plane_god_aliases": [
+     "The Woodland Man",
+     "The Librarian"
+    ],
+    "plane_god_motivation": "Dissolution"
+   }
+  },
+  {
+   "id": "lore/creatures",
+   "type": "lore",
+   "name": "Creatures of Kurovia",
+   "aliases": [
+    "Creatures",
+    "Widespread creatures"
+   ],
+   "summary": "Index of Kurovia's creatures by region, rarity and Challenge Rating, with the setting's rarity and CR scales.",
+   "setting": null,
+   "tags": [
+    "creatures",
+    "index"
+   ],
+   "related": [
+    "lore/umbuso",
+    "creature/cragback",
+    "creature/driftling",
+    "creature/dustkip",
+    "creature/kharuun",
+    "creature/knelhen",
+    "creature/lanthart",
+    "creature/mournback",
+    "creature/ritual-husk",
+    "creature/shellbill",
+    "creature/sunsnare"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/lore/creatures.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "lore/pantheon",
+   "type": "lore",
+   "name": "The Pantheon",
+   "aliases": [
+    "Gods",
+    "Pantheon"
+   ],
+   "summary": "The gods worshipped in Kurovia, ranked Major, Minor or Cult by how widely they are worshipped, plus the plane gods of the World Tree.",
+   "setting": null,
+   "tags": [
+    "pantheon",
+    "religion"
+   ],
+   "related": [
+    "lore/world-tree",
+    "deity/kelemvor",
+    "deity/helm",
+    "deity/azun",
+    "deity/gond",
+    "deity/yihdothrus",
+    "deity/tyr",
+    "deity/dornia",
+    "deity/hermod",
+    "deity/chauntea",
+    "deity/primus"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/lore/pantheon.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "lore/timeline",
+   "type": "lore",
+   "name": "Timeline",
+   "aliases": null,
+   "summary": null,
+   "setting": null,
+   "tags": null,
+   "related": null,
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/lore/timeline.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "lore/umbuso-hazard-index",
+   "type": "lore",
+   "name": "Umbuso Hazard Index",
+   "aliases": [
+    "UHI"
+   ],
+   "summary": "The UMB Research Directorate's six-factor (S/L/A/C/P/K) hazard score for Umbuso, averaged into a 1.00-5.00 UHI and a grade from I (Existential) to V (Limited).",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "classification"
+   ],
+   "related": [
+    "lore/umbuso",
+    "creature/hoshikui",
+    "creature/kharvassa",
+    "creature/oruvath",
+    "creature/vaelkr",
+    "creature/veyrath",
+    "creature/nhalyss",
+    "creature/elyrra",
+    "creature/saqramallki",
+    "creature/tathis",
+    "creature/ulveth"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/lore/umbuso-hazard-index.md",
+   "fields": {
+    "licence": "own-work",
+    "current_revision": "IV"
+   }
+  },
+  {
+   "id": "lore/umbuso",
+   "type": "lore",
+   "name": "Umbuso",
+   "aliases": [
+    "Hundred Gods",
+    "The Hundred Gods",
+    "UMB-000"
+   ],
+   "summary": "The Umbuso, traditionally the Hundred Gods, are an irregular class of extremely rare, ancient and destructive entities catalogued by the UMB Research Directorate.",
+   "setting": null,
+   "tags": [
+    "umbuso",
+    "hundred-gods",
+    "index"
+   ],
+   "related": [
+    "lore/umbuso-hazard-index",
+    "lore/creatures",
+    "creature/hoshikui",
+    "creature/kharvassa",
+    "creature/oruvath",
+    "creature/vaelkr",
+    "creature/veyrath",
+    "creature/nhalyss",
+    "creature/elyrra",
+    "creature/saqramallki",
+    "creature/tathis",
+    "creature/ulveth",
+    "creature/korthalax"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/lore/umbuso.md",
+   "fields": {
+    "licence": "own-work",
+    "archive": "UMB-000"
+   }
+  },
+  {
+   "id": "lore/world-tree",
+   "type": "lore",
+   "name": "The World Tree",
+   "aliases": [
+    "World Tree",
+    "The Planes",
+    "Cosmology"
+   ],
+   "summary": "The cosmology of the world. Nine planes, each born from a different outcome of the creation at the Dawn, each tied to an alignment and personified by its first creation, its plane god.",
+   "setting": null,
+   "tags": [
+    "cosmology",
+    "planes"
+   ],
+   "related": [
+    "lore/timeline",
+    "lore/pantheon",
+    "location/mechanus",
+    "location/limbo",
+    "location/carceri",
+    "location/the-far-realm",
+    "deity/primus"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/lore/world-tree.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "mechanic/haze-contamination",
+   "type": "mechanic",
+   "name": "Haze (Contamination)",
+   "aliases": [
+    "Haze (Mechanic)",
+    "Haze",
+    "Contamination"
+   ],
+   "summary": "Six-level contamination condition from exposure to the Haze or Delerium, with symptoms, random mutations, madness and monstrous transformation at level 6.",
+   "setting": null,
+   "tags": [
+    "homebrew",
+    "condition",
+    "haze"
+   ],
+   "related": [
+    "mechanic/lingering-injuries"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/mechanics/haze-contamination.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "mechanic/lingering-injuries",
+   "type": "mechanic",
+   "name": "Lingering Injuries",
+   "aliases": [
+    "Lingering Injurires"
+   ],
+   "summary": "d20 lingering-injury tables by damage type, rolled when a creature drops to 0 hit points or fails a save by 5 or more.",
+   "setting": null,
+   "tags": [
+    "homebrew",
+    "injury",
+    "combat"
+   ],
+   "related": [
+    "mechanic/haze-contamination",
+    "mechanic/petrification"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/mechanics/lingering-injuries.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "mechanic/oblate-archaeologist",
+   "type": "mechanic",
+   "name": "Oblate Archaeologist",
+   "aliases": [
+    "Oblate Archeologist"
+   ],
+   "summary": "Character background for a former ruin-delver attuned to the lingering Wild Magic of the Oblate.",
+   "setting": null,
+   "tags": [
+    "homebrew",
+    "background",
+    "character-creation"
+   ],
+   "related": [
+    "mechanic/sailor-airship"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/mechanics/oblate-archaeologist.md",
+   "fields": {
+    "licence": "own-work",
+    "skill_proficiencies": [
+     "Perception",
+     "Survival"
+    ],
+    "tool_proficiencies": "Cartographer's tools or navigator's tools",
+    "languages": "Common and one language of your choice"
+   }
+  },
+  {
+   "id": "mechanic/petrification",
+   "type": "mechanic",
+   "name": "Petrification",
+   "aliases": null,
+   "summary": "Progressive petrification that strips an action type each turn until the creature drops to 0 HP and either survives as stone or dies.",
+   "setting": null,
+   "tags": [
+    "homebrew",
+    "condition"
+   ],
+   "related": [
+    "mechanic/lingering-injuries"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/mechanics/petrification.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "mechanic/sailor-airship",
+   "type": "mechanic",
+   "name": "Sailor (Airship)",
+   "aliases": [
+    "Airship Sailor"
+   ],
+   "summary": "Character background for a former airship crew member who can call in favours for free passage.",
+   "setting": null,
+   "tags": [
+    "homebrew",
+    "background",
+    "character-creation"
+   ],
+   "related": [
+    "mechanic/oblate-archaeologist",
+    "location/ordon"
+   ],
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/mechanics/sailor-airship.md",
+   "fields": {
+    "licence": "own-work",
+    "skill_proficiencies": [
+     "Athletics",
+     "Perception"
+    ],
+    "tool_proficiencies": "Navigator's tools, vehicles (air)"
+   }
+  },
+  {
+   "id": "misc/welcome",
+   "type": "misc",
+   "name": "Welcome",
+   "aliases": null,
+   "summary": null,
+   "setting": null,
+   "tags": null,
+   "related": null,
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/misc/welcome.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  },
+  {
+   "id": "table/weather-generic-d100-varient",
+   "type": "table",
+   "name": "Weather (Generic) - d100 Varient",
+   "aliases": [
+    "Weather (Generic) -2d6 Varient"
+   ],
+   "summary": null,
+   "setting": null,
+   "tags": null,
+   "related": null,
+   "status": "canonical",
+   "updated": "2026-11-04",
+   "images": null,
+   "path": "content/tables/weather-generic-d100-varient.md",
+   "fields": {
+    "licence": "own-work"
+   }
+  }
+ ]
 }

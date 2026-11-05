@@ -45,6 +45,11 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("validate", help="check content/ against schema and link rules")
     sub.add_parser("index", help="rebuild index/manifest.json and index/entries.jsonl")
 
+    p = sub.add_parser("review", help="open the duplicate/conflict review UI in your browser")
+    p.add_argument("--port", type=int, default=8765, help="port to serve on (default 8765; next free one is used)")
+    p.add_argument("--host", default="127.0.0.1", help="interface to bind (default 127.0.0.1, local only)")
+    p.add_argument("--no-browser", action="store_true", help="don't open a browser tab automatically")
+
     a = ap.parse_args(argv)
     if a.cmd == "sources":
         for s in load_sources():
@@ -65,6 +70,9 @@ def main(argv: list[str] | None = None) -> int:
         return curate.validate()
     elif a.cmd == "index":
         curate.build_index()
+    elif a.cmd == "review":
+        from . import reviewer
+        reviewer.serve(a.host, a.port, not a.no_browser)
     return 0
 
 

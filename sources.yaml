@@ -39,6 +39,17 @@ sources:
     notes: "Newest vault; mostly scaffolding as of 2026-11-04."
     last_pulled: "2026-11-04T10:54:34+00:00"
 
+  - id: miraheze-kurovia
+    type: mediawiki
+    api: https://kurovia.miraheze.org/w/api.php
+    auth_env: KUROVIA          # private wiki: KUROVIA_BOT_USER / KUROVIA_BOT_PASS in env or .env
+    pages: all
+    namespaces: [0, 4, 10, 14]   # main, Project, Template, Category (CSS/JS pages skipped by content model)
+    priority: 6
+    licence: "Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)"
+    notes: "The Kurovian Documents. Private wiki (Administrators-only reads); needs a bot password."
+    last_pulled: "2026-11-04T12:37:03+00:00"
+
   # Examples - copy and fill in:
   # - id: miraheze-mywiki
   #   type: mediawiki

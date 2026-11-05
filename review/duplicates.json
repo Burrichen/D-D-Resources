@@ -1,156 +1,6 @@
 {
- "generated": "2026-11-04T10:55:06+00:00",
+ "generated": "2026-11-04T13:48:14+00:00",
  "groups": [
-  {
-   "members": [
-    "obsidian-dnd-v2:Welcome.md",
-    "obsidian-dnd-v3:Welcome.md"
-   ],
-   "identical_text": true,
-   "all_stubs": false,
-   "has_content_entry": false,
-   "reasons": [
-    "same name 'welcome'"
-   ],
-   "sizes": {
-    "obsidian-dnd-v2:Welcome.md": 150,
-    "obsidian-dnd-v3:Welcome.md": 150
-   }
-  },
-  {
-   "members": [
-    "obsidian-dnd-v3:Locations/Other/Ordon/Ordon.md",
-    "obsidian-dnd-v4:01 - World/Ordon/Ordon.md",
-    "obsidian-dnd-v5:01 - Geography/Ordon/Ordon.md"
-   ],
-   "identical_text": false,
-   "all_stubs": false,
-   "has_content_entry": false,
-   "reasons": [
-    "same name 'ordon'",
-    "similar titles (100%)"
-   ],
-   "sizes": {
-    "obsidian-dnd-v3:Locations/Other/Ordon/Ordon.md": 14328,
-    "obsidian-dnd-v4:01 - World/Ordon/Ordon.md": 155,
-    "obsidian-dnd-v5:01 - Geography/Ordon/Ordon.md": 9
-   }
-  },
-  {
-   "members": [
-    "obsidian-dnd-v3:Locations/Southern Continent/Halingo.md",
-    "obsidian-dnd-v4:01 - World/Halingo/Halingo.md",
-    "obsidian-dnd-v5:01 - Geography/Halingo/Halingo.md"
-   ],
-   "identical_text": false,
-   "all_stubs": false,
-   "has_content_entry": false,
-   "reasons": [
-    "same name 'halingo'",
-    "similar titles (100%)"
-   ],
-   "sizes": {
-    "obsidian-dnd-v3:Locations/Southern Continent/Halingo.md": 754,
-    "obsidian-dnd-v4:01 - World/Halingo/Halingo.md": 2419,
-    "obsidian-dnd-v5:01 - Geography/Halingo/Halingo.md": 0
-   }
-  },
-  {
-   "members": [
-    "obsidian-dnd-v2:Campaigns/Sessions/Act II - The Fire/Session 16.md",
-    "obsidian-dnd-v2:Campaigns/Sessions/Act II - The Fire/Session 17.md"
-   ],
-   "identical_text": false,
-   "all_stubs": false,
-   "has_content_entry": false,
-   "reasons": [
-    "similar text (83%)"
-   ],
-   "sizes": {
-    "obsidian-dnd-v2:Campaigns/Sessions/Act II - The Fire/Session 16.md": 6303,
-    "obsidian-dnd-v2:Campaigns/Sessions/Act II - The Fire/Session 17.md": 7052
-   }
-  },
-  {
-   "members": [
-    "obsidian-dnd-v2:Mechanics/Weather/Weather (Generic) - d100 Varient.md",
-    "obsidian-dnd-v2:Mechanics/Weather/Weather (Generic) -2d6 Varient.md"
-   ],
-   "identical_text": false,
-   "all_stubs": false,
-   "has_content_entry": false,
-   "reasons": [
-    "similar titles (90%)"
-   ],
-   "sizes": {
-    "obsidian-dnd-v2:Mechanics/Weather/Weather (Generic) - d100 Varient.md": 422,
-    "obsidian-dnd-v2:Mechanics/Weather/Weather (Generic) -2d6 Varient.md": 346
-   }
-  },
-  {
-   "members": [
-    "obsidian-dnd-v2:Wiki/Gods/Major/Kelemvor, God of the Dead.md",
-    "obsidian-dnd-v3:Lore/Gods and Scions/Scions/Kelemvor.md"
-   ],
-   "identical_text": false,
-   "all_stubs": false,
-   "has_content_entry": false,
-   "reasons": [
-    "similar text (84%)"
-   ],
-   "sizes": {
-    "obsidian-dnd-v2:Wiki/Gods/Major/Kelemvor, God of the Dead.md": 5260,
-    "obsidian-dnd-v3:Lore/Gods and Scions/Scions/Kelemvor.md": 4819
-   }
-  },
-  {
-   "members": [
-    "obsidian-dnd-v2:Wiki/Locations/Freelands of Halingo/The Free State/Heresy.md",
-    "obsidian-dnd-v4:01 - World/Halingo/Regions/Major Settlements/Heresy/Heresy.md"
-   ],
-   "identical_text": false,
-   "all_stubs": false,
-   "has_content_entry": false,
-   "reasons": [
-    "same name 'heresy'"
-   ],
-   "sizes": {
-    "obsidian-dnd-v2:Wiki/Locations/Freelands of Halingo/The Free State/Heresy.md": 1559,
-    "obsidian-dnd-v4:01 - World/Halingo/Regions/Major Settlements/Heresy/Heresy.md": 195
-   }
-  },
-  {
-   "members": [
-    "obsidian-dnd-v2:Wiki/Locations/Limate/Khundur/Khundur.md",
-    "obsidian-dnd-v2:Wiki/Locations/Limate/Khundur (Pre-Destruction).md"
-   ],
-   "identical_text": false,
-   "all_stubs": false,
-   "has_content_entry": false,
-   "reasons": [
-    "similar text (97%)"
-   ],
-   "sizes": {
-    "obsidian-dnd-v2:Wiki/Locations/Limate/Khundur/Khundur.md": 4365,
-    "obsidian-dnd-v2:Wiki/Locations/Limate/Khundur (Pre-Destruction).md": 4268
-   }
-  },
-  {
-   "members": [
-    "obsidian-dnd-v3:Timeline.md",
-    "obsidian-dnd-v4:07 - References/Timeline/Timeline.md"
-   ],
-   "identical_text": false,
-   "all_stubs": false,
-   "has_content_entry": false,
-   "reasons": [
-    "same name 'timeline'"
-   ],
-   "sizes": {
-    "obsidian-dnd-v3:Timeline.md": 3712,
-    "obsidian-dnd-v4:07 - References/Timeline/Timeline.md": 0
-   }
-  },
   {
    "members": [
     "obsidian-dnd-v4:01 - World/Halingo/Regions/Landmarks.md",
@@ -185,6 +35,7 @@
   }
  ],
  "stubs": [
+  "miraheze-kurovia:Nareth.md",
   "obsidian-dnd-v2:Campaigns/Sessions/Act I - The Frying Pan/Session 9.md",
   "obsidian-dnd-v2:Campaigns/Sessions/Act II - The Fire/Session 11.md",
   "obsidian-dnd-v2:Campaigns/Sessions/Act II - The Fire/Session 12.md",
@@ -230,10 +81,6 @@
   "obsidian-dnd-v3:Lore/World Tree/Astral Space.md",
   "obsidian-dnd-v3:Lore/World Tree/Inner Planes/The Underdark.md",
   "obsidian-dnd-v3:Lore/World Tree/Outer Planes/Abyss.md",
-  "obsidian-dnd-v3:Lore/World Tree/Outer Planes/Aracadia/Aracadia.md",
-  "obsidian-dnd-v3:Lore/World Tree/Outer Planes/Avernus.md",
-  "obsidian-dnd-v3:Lore/World Tree/Outer Planes/Elysium.md",
-  "obsidian-dnd-v3:Lore/World Tree/Outer Planes/Mount Celestia.md",
   "obsidian-dnd-v3:Random Characters and Hooks/Ashaiek.md",
   "obsidian-dnd-v3:Random Characters and Hooks/Seeping Maw.md",
   "obsidian-dnd-v3:Testing Grounds.md",
@@ -281,13 +128,10 @@
   "obsidian-dnd-v4:07 - References/Timeline/05 - Dynasties.md",
   "obsidian-dnd-v4:07 - References/Timeline/06 - Myths + Divine Events.md",
   "obsidian-dnd-v4:07 - References/Timeline/TEST.md",
-  "obsidian-dnd-v4:07 - References/Timeline/Timeline.md",
   "obsidian-dnd-v4:99 - Assets/Maps/Maps.md",
   "obsidian-dnd-v4:99 - Assets/PDF/PDF.md",
   "obsidian-dnd-v4:99 - Assets/Portraits/Portraits.md",
   "obsidian-dnd-v4:99 - Assets/Symbols/Symbols.md",
-  "obsidian-dnd-v5:01 - Geography/Halingo/Halingo.md",
-  "obsidian-dnd-v5:01 - Geography/Ordon/Ordon.md",
   "obsidian-dnd-v5:01 - Geography/Skgurr/Skgurr.md"
  ]
 }

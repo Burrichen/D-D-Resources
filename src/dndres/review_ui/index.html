@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Review Desk</title>
+<link rel="stylesheet" href="/app.css">
+<script>window.DNDRES_TOKEN = "__DNDRES_TOKEN__";</script>
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="#/">Review Desk</a>
+  <span class="counts" id="counts"></span>
+  <span class="spacer"></span>
+  <span class="generated" id="generated"></span>
+  <button class="btn ghost" id="btn-refresh" title="Re-read review/duplicates.md and review/conflicts.md">Refresh</button>
+  <button class="btn ghost" id="btn-rescan" title="Re-run `dndres dupes` to regenerate review/duplicates.md">Re-scan</button>
+</header>
+
+<div class="layout">
+  <aside class="sidebar">
+    <div class="sidebar-tools">
+      <input id="filter" type="search" placeholder="Filter by name or path" autocomplete="off">
+      <label class="check"><input type="checkbox" id="hide-stubs"> Hide all-stub groups</label>
+    </div>
+    <nav id="list" aria-label="Review items"></nav>
+  </aside>
+  <main id="main"></main>
+</div>
+
+<div id="toast" role="status" aria-live="polite"></div>
+
+<dialog id="dismiss-dlg">
+  <form method="dialog" id="dismiss-form">
+    <h2>Dismiss this group</h2>
+    <p class="muted">The group is removed from <code>review/duplicates.md</code> and the decision is logged, so <code>dndres dupes</code> won't raise it again. No files are changed.</p>
+    <div id="dismiss-reasons"></div>
+    <label class="field"><span>Note (optional)</span><input name="note" autocomplete="off"></label>
+    <div class="dlg-actions">
+      <button class="btn ghost" value="cancel" formnovalidate>Cancel</button>
+      <button class="btn danger" value="ok">Dismiss</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="/app.js"></script>
+</body>
+</html>

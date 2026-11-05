@@ -34,7 +34,22 @@ The goal is **one canonical entry per real thing** (character, place, god, item,
 - **If the user defers:**
   - Write the entry with `status: needs-review`.
   - Use the newest version's facts for now.
-  - Add the conflict to `review/conflicts.md`.
+  - Add the conflict to `review/conflicts.md`, in the format below. The user may resolve it in `uv run dndres review`, which parses this format exactly, so remove the `_None yet._` line when adding the first one.
+
+    ```markdown
+    ## <entry id>: <the question, one line>
+    - Entry: `<entry id>`
+    - `<source-id>:<raw path>`: <what this version says>
+    - `<source-id>:<raw path>`: <what this version says>
+    Optional free-text context.
+    ```
+
+### The review UI (`dndres review`)
+
+The user can resolve duplicates and conflicts themselves in `uv run dndres review`. What it writes follows this skill's rules: entries in the format below, `sources` with hashes, a row in `decisions.md`, and the item removed from `duplicates.md` / `conflicts.md`.
+
+- Duplicate decisions are logged with the scope cell `dupes: \`key\`, \`key\`, …` (plus `content:<id>` when an entry was written). `dndres dupes` reads these rows and won't raise those pairs again. Use the same scope format when you log a duplicate decision yourself, via `curate.log_decision(curate.dupes_scope(keys), …)`.
+- Entries saved from the UI may still need your follow-up: summaries, `related` links, and turning plain-text references into links once their targets are curated. Check `decisions.md` for recent `Saved as` rows.
 
 ## Entry format
 
@@ -96,9 +111,20 @@ Body in plain GitHub-flavoured markdown.
 - **Links:** look for orphan entries (no `related` and nothing links to them) and weak summaries.
 - **Scope:** ask the user about out-of-scope material, e.g. v2's `z. Other Games`.
 
+## Promoting to Canon (stage 3)
+
+`content/` is the cleaned stage. `Canon/` is stage 3: Kurovia world lore only. The rules are in CLAUDE.md › The flow and `Canon/README.md`. In short:
+
+- Promotion **moves** the file to `Canon/<type-dir>/<slug>.md`, keeping the same id. It never copies.
+- Only `status: canonical` entries with no open conflicts or duplicates can be promoted, and only after the user approves the batch.
+- Before checking a fact against `content/`, check `Canon/`. Canon wins, but you still report any contradiction.
+- Mechanics, tables, spells, session logs, misc and borrowed D&D material are never promoted.
+- The tooling doesn't read `Canon/` yet. Don't promote anything until it does.
+
 ## Never
 
 - Never edit `raw/`, or the user's vaults or docs.
+- Never edit, add to, or remove from `Canon/` without the user's approval.
 - Never invent lore to fill gaps. A short `draft` is better than a fabricated `canonical` entry.
 - Never resolve a substantive conflict without asking.
 - Never delete a canonical entry that other programs might reference. Set `status: deprecated` and add `superseded_by: <id>` instead.

@@ -4,13 +4,14 @@ from __future__ import annotations
 import json
 import re
 from collections import Counter, defaultdict
+from itertools import combinations
 from pathlib import Path
 
 import jsonschema
 from rapidfuzz import fuzz, process
 
 from .common import (CONTENT, INDEX, RAW, REVIEW, ROOT, TYPE_DIRS, _jsonable, iter_content,
-                     iter_raw, load_sources, now_iso)
+                     iter_raw, load_sources, now_iso, today)
 
 STUB_CHARS = 120
 WIKILINK_RE = re.compile(r"!?\[\[([^\]|#]+)(?:#[^\]|]*)?(?:\|([^\]]*))?\]\]")
@@ -40,6 +41,76 @@ def _plain(body: str) -> str:
 def _norm_title(t: str) -> str:
     t = TITLE_NOISE_RE.sub(" ", t)
     return re.sub(r"[^a-z0-9]+", " ", t.lower()).strip()
+
+
+# ---------------- decision log ----------------
+# review/decisions.md is a markdown table. Rows written for duplicate groups use the scope
+# cell "dupes: `key`, `key`, ..." (keys as in duplicates.md, plus `content:<id>` for the
+# entry they went into). `dupes` reads these rows so a decided group is not raised again.
+
+DECISIONS_MD = REVIEW / "decisions.md"
+_CELL_SPLIT_RE = re.compile(r"(?<!\\)\|")
+_TICK_RE = re.compile(r"`([^`]+)`")
+
+
+def _md_cell(text: str) -> str:
+    return " ".join(str(text).split()).replace("|", "\\|")
+
+
+def dupes_scope(keys) -> str:
+    return "dupes: " + ", ".join(f"`{k}`" for k in keys)
+
+
+def log_decision(scope: str, question: str, decision: str, note: str = "") -> None:
+    """Append one row to review/decisions.md."""
+    text = DECISIONS_MD.read_text() if DECISIONS_MD.exists() else (
+        "# Curation decisions\n\n| Date | Entry / scope | Question | Decision | Note |\n|---|---|---|---|---|\n")
+    if not text.endswith("\n"):
+        text += "\n"
+    row = "| " + " | ".join(_md_cell(c) for c in (today(), scope, question, decision, note)) + " |\n"
+    DECISIONS_MD.write_text(text + row)
+
+
+def decided_duplicate_sets() -> list[set[str]]:
+    """Member-key sets of every duplicate group the user has already decided."""
+    if not DECISIONS_MD.exists():
+        return []
+    out = []
+    for line in DECISIONS_MD.read_text().splitlines():
+        cells = [c.strip() for c in _CELL_SPLIT_RE.split(line.strip().strip("|"))]
+        if len(cells) >= 2 and cells[1].startswith("dupes:"):
+            keys = {k.replace("\\|", "|") for k in _TICK_RE.findall(cells[1])}
+            if len(keys) > 1:
+                out.append(keys)
+    return out
+
+
+def _settled_checker():
+    """Return settled(a, b): True if the pair of member keys needs no further review.
+
+    A pair is settled when a canonical entry already cites both (or one cites the other),
+    or when a logged duplicate decision covered them, directly or via the raw files an
+    entry cites.
+    """
+    owners: dict[str, set[str]] = defaultdict(set)   # raw key -> {content:<id>}
+    cites: dict[str, set[str]] = defaultdict(set)    # content:<id> -> {raw key}
+    for (src, rel), (cid, _) in _curated_refs().items():
+        owners[f"{src}:{rel}"].add(f"content:{cid}")
+        cites[f"content:{cid}"].add(f"{src}:{rel}")
+    pairs = {frozenset(p) for keys in decided_duplicate_sets() for p in combinations(keys, 2)}
+
+    def expand(k: str) -> set[str]:
+        return {k} | (cites[k] if k.startswith("content:") else owners[k])
+
+    def settled(a: str, b: str) -> bool:
+        both_content = a.startswith("content:") and b.startswith("content:")
+        if both_content and cites[a] & cites[b]:
+            return False  # two entries built from the same raw file: always worth a look
+        if not both_content and expand(a) & expand(b):
+            return True
+        return any(frozenset((x, y)) in pairs for x in expand(a) for y in expand(b) if x != y)
+
+    return settled
 
 
 # ---------------- status ----------------
@@ -175,9 +246,13 @@ def dupes(title_threshold: int = 90, body_threshold: int = 80) -> None:
     groups = [g for g in groups.values() if len(g) > 1]
 
     # identical-content groups are trivially mergeable; flag them
-    out = []
+    settled = _settled_checker()
+    out, hidden = [], 0
     for g in groups:
         members = [items[i] for i in g]
+        if all(settled(x["key"], y["key"]) for x, y in combinations(members, 2)):
+            hidden += 1  # already curated or decided (see review/decisions.md)
+            continue
         texts = {it["text"] for it in members}
         out.append({
             "members": [it["key"] for it in members],
@@ -189,7 +264,9 @@ def dupes(title_threshold: int = 90, body_threshold: int = 80) -> None:
         })
     out.sort(key=lambda g: (g["has_content_entry"], not g["identical_text"], -len(g["members"])))
 
-    stubs = sorted(it["key"] for it in items if len(it["text"]) < STUB_CHARS and not it["key"].startswith("content:"))
+    curated = {f"{s}:{p}" for s, p in _curated_refs()}
+    stubs = sorted(it["key"] for it in items if len(it["text"]) < STUB_CHARS
+                   and not it["key"].startswith("content:") and it["key"] not in curated)
 
     REVIEW.mkdir(exist_ok=True)
     (REVIEW / "duplicates.json").write_text(json.dumps({"generated": now_iso(), "groups": out,
@@ -211,7 +288,8 @@ def dupes(title_threshold: int = 90, body_threshold: int = 80) -> None:
     lines += [f"- `{s}`" for s in stubs]
     (REVIEW / "duplicates.md").write_text("\n".join(lines) + "\n")
     print(f"{len(out)} duplicate groups ({sum(g['identical_text'] for g in out)} identical), "
-          f"{len(stubs)} stubs -> review/duplicates.md")
+          f"{len(stubs)} stubs -> review/duplicates.md"
+          + (f"  ({hidden} already-resolved groups hidden)" if hidden else ""))
 
 
 # ---------------- validate ----------------
